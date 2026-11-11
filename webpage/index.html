@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MPSS — Vulnerability Scoring System</title>
+  <meta name="description" content="MPSS is a precise vulnerability scoring calculator based on CVSS v3.1. Score vulnerabilities with Base, Temporal, and Environmental metrics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Animated background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Header -->
+  <header id="app-header">
+    <div class="header-inner">
+      <div class="logo" id="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="28" height="28" rx="6" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M10 16L14 20L22 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">MPSS</span>
+          <span class="logo-sub">v3.1 Scoring System</span>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <button class="nav-btn active" data-tab="calculator" id="nav-calculator">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><line x1="5" y1="5" x2="11" y2="5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="5" y1="8" x2="8" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="5" y1="11" x2="11" y2="11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Calculator
+        </button>
+        <button class="nav-btn" data-tab="about" id="nav-about">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="7" x2="8" y2="11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="5" r="0.75" fill="currentColor"/></svg>
+          About
+        </button>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="btn-reset" title="Reset All">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9a6 6 0 1 1 1.05 3.36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><polyline points="3,5 3,9 7,9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Calculator Tab -->
+    <div class="tab-content active" id="tab-calculator">
+
+      <!-- Score Display -->
+      <section class="score-hero" id="score-hero">
+        <div class="score-cards">
+          <div class="score-card score-card-main" id="score-card-base">
+            <div class="score-card-label">Base Score</div>
+            <div class="score-card-value" id="base-score-display">0.0</div>
+            <div class="score-card-severity" id="base-severity-display">None</div>
+            <div class="score-card-ring">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="52" stroke="rgba(255,255,255,0.06)" stroke-width="6" fill="none"/>
+                <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="6" fill="none"
+                  stroke-dasharray="326.73" stroke-dashoffset="326.73" stroke-linecap="round"
+                  transform="rotate(-90 60 60)" id="base-ring"/>
+              </svg>
+            </div>
+          </div>
+          <div class="score-card score-card-secondary" id="score-card-temporal">
+            <div class="score-card-label">Temporal Score</div>
+            <div class="score-card-value" id="temporal-score-display">0.0</div>
+            <div class="score-card-severity" id="temporal-severity-display">None</div>
+            <div class="score-card-ring">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="52" stroke="rgba(255,255,255,0.06)" stroke-width="6" fill="none"/>
+                <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="6" fill="none"
+                  stroke-dasharray="326.73" stroke-dashoffset="326.73" stroke-linecap="round"
+                  transform="rotate(-90 60 60)" id="temporal-ring"/>
+              </svg>
+            </div>
+          </div>
+          <div class="score-card score-card-secondary" id="score-card-env">
+            <div class="score-card-label">Environmental Score</div>
+            <div class="score-card-value" id="env-score-display">0.0</div>
+            <div class="score-card-severity" id="env-severity-display">None</div>
+            <div class="score-card-ring">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="52" stroke="rgba(255,255,255,0.06)" stroke-width="6" fill="none"/>
+                <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="6" fill="none"
+                  stroke-dasharray="326.73" stroke-dashoffset="326.73" stroke-linecap="round"
+                  transform="rotate(-90 60 60)" id="env-ring"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vector String -->
+        <div class="vector-string-container" id="vector-container">
+          <div class="vector-label">Vector String</div>
+          <div class="vector-display">
+            <code id="vector-string">CVSS:3.1/AV:_/AC:_/PR:_/UI:_/S:_/C:_/I:_/A:_</code>
+            <button class="copy-btn" id="btn-copy-vector" title="Copy Vector String">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5" stroke="currentColor" stroke-width="1.5"/></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metric Groups -->
+      <div class="metrics-container">
+
+        <!-- BASE METRICS -->
+        <section class="metric-group" id="metric-group-base">
+          <div class="metric-group-header" id="header-base">
+            <div class="metric-group-badge base">B</div>
+            <div class="metric-group-info">
+              <h2>Base Score Metrics</h2>
+              <p>The Base metric group represents the intrinsic characteristics of a vulnerability that are constant over time and across user environments.</p>
+            </div>
+            <div class="metric-group-toggle">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polyline points="6,8 10,12 14,8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="metric-group-body open">
+
+            <!-- Exploitability Metrics -->
+            <div class="metric-subgroup">
+              <h3 class="metric-subgroup-title">Exploitability Metrics</h3>
+
+              <!-- Attack Vector -->
+              <div class="metric-row" id="metric-AV">
+                <div class="metric-label">
+                  <span class="metric-name">Attack Vector (AV)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric reflects the context by which vulnerability exploitation is possible. The more remote an attacker can be to attack a host, the greater the vulnerability score.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn" data-metric="AV" data-value="N" id="AV-N">Network <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="AV" data-value="A" id="AV-A">Adjacent <span class="metric-short">(A)</span></button>
+                  <button class="metric-btn" data-metric="AV" data-value="L" id="AV-L">Local <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="AV" data-value="P" id="AV-P">Physical <span class="metric-short">(P)</span></button>
+                </div>
+              </div>
+
+              <!-- Attack Complexity -->
+              <div class="metric-row" id="metric-AC">
+                <div class="metric-label">
+                  <span class="metric-name">Attack Complexity (AC)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric describes the conditions beyond the attacker's control that must exist in order to exploit the vulnerability.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn" data-metric="AC" data-value="L" id="AC-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="AC" data-value="H" id="AC-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+
+              <!-- Privileges Required -->
+              <div class="metric-row" id="metric-PR">
+                <div class="metric-label">
+                  <span class="metric-name">Privileges Required (PR)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn" data-metric="PR" data-value="N" id="PR-N">None <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="PR" data-value="L" id="PR-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="PR" data-value="H" id="PR-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+
+              <!-- User Interaction -->
+              <div class="metric-row" id="metric-UI">
+                <div class="metric-label">
+                  <span class="metric-name">User Interaction (UI)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric captures the requirement for a human user, other than the attacker, to participate in the successful compromise of the vulnerable component.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn" data-metric="UI" data-value="N" id="UI-N">None <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="UI" data-value="R" id="UI-R">Required <span class="metric-short">(R)</span></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Impact Metrics -->
+            <div class="metric-subgroup">
+              <h3 class="metric-subgroup-title">Impact Metrics</h3>
+
+              <!-- Scope -->
+              <div class="metric-row" id="metric-S">
+                <div class="metric-label">
+                  <span class="metric-name">Scope (S)</span>
+                  <span class="metric-tooltip" data-tooltip="Does a successful attack impact a component other than the vulnerable component? If so, the Scope is Changed.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn" data-metric="S" data-value="U" id="S-U">Unchanged <span class="metric-short">(U)</span></button>
+                  <button class="metric-btn" data-metric="S" data-value="C" id="S-C">Changed <span class="metric-short">(C)</span></button>
+                </div>
+              </div>
+
+              <!-- Confidentiality -->
+              <div class="metric-row" id="metric-C">
+                <div class="metric-label">
+                  <span class="metric-name">Confidentiality Impact (C)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn" data-metric="C" data-value="N" id="C-N">None <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="C" data-value="L" id="C-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="C" data-value="H" id="C-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+
+              <!-- Integrity -->
+              <div class="metric-row" id="metric-I">
+                <div class="metric-label">
+                  <span class="metric-name">Integrity Impact (I)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn" data-metric="I" data-value="N" id="I-N">None <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="I" data-value="L" id="I-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="I" data-value="H" id="I-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+
+              <!-- Availability -->
+              <div class="metric-row" id="metric-A">
+                <div class="metric-label">
+                  <span class="metric-name">Availability Impact (A)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn" data-metric="A" data-value="N" id="A-N">None <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="A" data-value="L" id="A-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="A" data-value="H" id="A-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TEMPORAL METRICS -->
+        <section class="metric-group" id="metric-group-temporal">
+          <div class="metric-group-header" id="header-temporal">
+            <div class="metric-group-badge temporal">T</div>
+            <div class="metric-group-info">
+              <h2>Temporal Score Metrics</h2>
+              <p>The Temporal metrics measure the current state of exploit techniques or code availability, the existence of patches or workarounds, and confidence in the description of a vulnerability.</p>
+            </div>
+            <div class="metric-group-toggle">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polyline points="6,8 10,12 14,8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="metric-group-body">
+
+            <!-- Exploit Code Maturity -->
+            <div class="metric-row" id="metric-E">
+              <div class="metric-label">
+                <span class="metric-name">Exploit Code Maturity (E)</span>
+                <span class="metric-tooltip" data-tooltip="This metric measures the likelihood of the vulnerability being attacked based on the current state of exploit techniques, code availability, or active exploitation.">?</span>
+              </div>
+              <div class="metric-options">
+                <button class="metric-btn selected" data-metric="E" data-value="X" id="E-X">Not Defined <span class="metric-short">(X)</span></button>
+                <button class="metric-btn" data-metric="E" data-value="U" id="E-U">Unproven <span class="metric-short">(U)</span></button>
+                <button class="metric-btn" data-metric="E" data-value="P" id="E-P">Proof-of-Concept <span class="metric-short">(P)</span></button>
+                <button class="metric-btn" data-metric="E" data-value="F" id="E-F">Functional <span class="metric-short">(F)</span></button>
+                <button class="metric-btn" data-metric="E" data-value="H" id="E-H">High <span class="metric-short">(H)</span></button>
+              </div>
+            </div>
+
+            <!-- Remediation Level -->
+            <div class="metric-row" id="metric-RL">
+              <div class="metric-label">
+                <span class="metric-name">Remediation Level (RL)</span>
+                <span class="metric-tooltip" data-tooltip="This metric describes the remediation level for a vulnerability. The typical vulnerability is initially unpatched when first published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued.">?</span>
+              </div>
+              <div class="metric-options">
+                <button class="metric-btn selected" data-metric="RL" data-value="X" id="RL-X">Not Defined <span class="metric-short">(X)</span></button>
+                <button class="metric-btn" data-metric="RL" data-value="O" id="RL-O">Official Fix <span class="metric-short">(O)</span></button>
+                <button class="metric-btn" data-metric="RL" data-value="T" id="RL-T">Temporary Fix <span class="metric-short">(T)</span></button>
+                <button class="metric-btn" data-metric="RL" data-value="W" id="RL-W">Workaround <span class="metric-short">(W)</span></button>
+                <button class="metric-btn" data-metric="RL" data-value="U" id="RL-U">Unavailable <span class="metric-short">(U)</span></button>
+              </div>
+            </div>
+
+            <!-- Report Confidence -->
+            <div class="metric-row" id="metric-RC">
+              <div class="metric-label">
+                <span class="metric-name">Report Confidence (RC)</span>
+                <span class="metric-tooltip" data-tooltip="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details.">?</span>
+              </div>
+              <div class="metric-options">
+                <button class="metric-btn selected" data-metric="RC" data-value="X" id="RC-X">Not Defined <span class="metric-short">(X)</span></button>
+                <button class="metric-btn" data-metric="RC" data-value="U" id="RC-U">Unknown <span class="metric-short">(U)</span></button>
+                <button class="metric-btn" data-metric="RC" data-value="R" id="RC-R">Reasonable <span class="metric-short">(R)</span></button>
+                <button class="metric-btn" data-metric="RC" data-value="C" id="RC-C">Confirmed <span class="metric-short">(C)</span></button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ENVIRONMENTAL METRICS -->
+        <section class="metric-group" id="metric-group-env">
+          <div class="metric-group-header" id="header-env">
+            <div class="metric-group-badge env">E</div>
+            <div class="metric-group-info">
+              <h2>Environmental Score Metrics</h2>
+              <p>These metrics enable the analyst to customize the CVSS score depending on the importance of the affected IT asset to a user's organization, measured in terms of Confidentiality, Integrity, and Availability.</p>
+            </div>
+            <div class="metric-group-toggle">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polyline points="6,8 10,12 14,8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="metric-group-body">
+
+            <!-- Security Requirements -->
+            <div class="metric-subgroup">
+              <h3 class="metric-subgroup-title">Security Requirements</h3>
+
+              <div class="metric-row" id="metric-CR">
+                <div class="metric-label">
+                  <span class="metric-name">Confidentiality Requirement (CR)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric enables the analyst to customize the CVSS score depending on the importance of Confidentiality to the affected IT asset.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn selected" data-metric="CR" data-value="X" id="CR-X">Not Defined <span class="metric-short">(X)</span></button>
+                  <button class="metric-btn" data-metric="CR" data-value="L" id="CR-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="CR" data-value="M" id="CR-M">Medium <span class="metric-short">(M)</span></button>
+                  <button class="metric-btn" data-metric="CR" data-value="H" id="CR-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+
+              <div class="metric-row" id="metric-IR">
+                <div class="metric-label">
+                  <span class="metric-name">Integrity Requirement (IR)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric enables the analyst to customize the CVSS score depending on the importance of Integrity to the affected IT asset.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn selected" data-metric="IR" data-value="X" id="IR-X">Not Defined <span class="metric-short">(X)</span></button>
+                  <button class="metric-btn" data-metric="IR" data-value="L" id="IR-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="IR" data-value="M" id="IR-M">Medium <span class="metric-short">(M)</span></button>
+                  <button class="metric-btn" data-metric="IR" data-value="H" id="IR-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+
+              <div class="metric-row" id="metric-AR">
+                <div class="metric-label">
+                  <span class="metric-name">Availability Requirement (AR)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric enables the analyst to customize the CVSS score depending on the importance of Availability to the affected IT asset.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn selected" data-metric="AR" data-value="X" id="AR-X">Not Defined <span class="metric-short">(X)</span></button>
+                  <button class="metric-btn" data-metric="AR" data-value="L" id="AR-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="AR" data-value="M" id="AR-M">Medium <span class="metric-short">(M)</span></button>
+                  <button class="metric-btn" data-metric="AR" data-value="H" id="AR-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modified Base Metrics -->
+            <div class="metric-subgroup">
+              <h3 class="metric-subgroup-title">Modified Base Metrics</h3>
+
+              <div class="metric-row" id="metric-MAV">
+                <div class="metric-label">
+                  <span class="metric-name">Modified Attack Vector (MAV)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric reflects the modified context by which vulnerability exploitation is possible for the user's environment.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn selected" data-metric="MAV" data-value="X" id="MAV-X">Not Defined <span class="metric-short">(X)</span></button>
+                  <button class="metric-btn" data-metric="MAV" data-value="N" id="MAV-N">Network <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="MAV" data-value="A" id="MAV-A">Adjacent <span class="metric-short">(A)</span></button>
+                  <button class="metric-btn" data-metric="MAV" data-value="L" id="MAV-L">Local <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="MAV" data-value="P" id="MAV-P">Physical <span class="metric-short">(P)</span></button>
+                </div>
+              </div>
+
+              <div class="metric-row" id="metric-MAC">
+                <div class="metric-label">
+                  <span class="metric-name">Modified Attack Complexity (MAC)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric describes the modified conditions beyond the attacker's control that must exist for the user's environment.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn selected" data-metric="MAC" data-value="X" id="MAC-X">Not Defined <span class="metric-short">(X)</span></button>
+                  <button class="metric-btn" data-metric="MAC" data-value="L" id="MAC-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="MAC" data-value="H" id="MAC-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+
+              <div class="metric-row" id="metric-MPR">
+                <div class="metric-label">
+                  <span class="metric-name">Modified Privileges Required (MPR)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric describes the modified level of privileges an attacker must possess for the user's environment.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn selected" data-metric="MPR" data-value="X" id="MPR-X">Not Defined <span class="metric-short">(X)</span></button>
+                  <button class="metric-btn" data-metric="MPR" data-value="N" id="MPR-N">None <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="MPR" data-value="L" id="MPR-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="MPR" data-value="H" id="MPR-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+
+              <div class="metric-row" id="metric-MUI">
+                <div class="metric-label">
+                  <span class="metric-name">Modified User Interaction (MUI)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric captures the modified requirement for user interaction for the user's environment.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn selected" data-metric="MUI" data-value="X" id="MUI-X">Not Defined <span class="metric-short">(X)</span></button>
+                  <button class="metric-btn" data-metric="MUI" data-value="N" id="MUI-N">None <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="MUI" data-value="R" id="MUI-R">Required <span class="metric-short">(R)</span></button>
+                </div>
+              </div>
+
+              <div class="metric-row" id="metric-MS">
+                <div class="metric-label">
+                  <span class="metric-name">Modified Scope (MS)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric captures the modified scope for the user's environment.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn selected" data-metric="MS" data-value="X" id="MS-X">Not Defined <span class="metric-short">(X)</span></button>
+                  <button class="metric-btn" data-metric="MS" data-value="U" id="MS-U">Unchanged <span class="metric-short">(U)</span></button>
+                  <button class="metric-btn" data-metric="MS" data-value="C" id="MS-C">Changed <span class="metric-short">(C)</span></button>
+                </div>
+              </div>
+
+              <div class="metric-row" id="metric-MC">
+                <div class="metric-label">
+                  <span class="metric-name">Modified Confidentiality (MC)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric measures the modified impact to confidentiality for the user's environment.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn selected" data-metric="MC" data-value="X" id="MC-X">Not Defined <span class="metric-short">(X)</span></button>
+                  <button class="metric-btn" data-metric="MC" data-value="N" id="MC-N">None <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="MC" data-value="L" id="MC-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="MC" data-value="H" id="MC-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+
+              <div class="metric-row" id="metric-MI">
+                <div class="metric-label">
+                  <span class="metric-name">Modified Integrity (MI)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric measures the modified impact to integrity for the user's environment.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn selected" data-metric="MI" data-value="X" id="MI-X">Not Defined <span class="metric-short">(X)</span></button>
+                  <button class="metric-btn" data-metric="MI" data-value="N" id="MI-N">None <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="MI" data-value="L" id="MI-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="MI" data-value="H" id="MI-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+
+              <div class="metric-row" id="metric-MA">
+                <div class="metric-label">
+                  <span class="metric-name">Modified Availability (MA)</span>
+                  <span class="metric-tooltip" data-tooltip="This metric measures the modified impact to availability for the user's environment.">?</span>
+                </div>
+                <div class="metric-options">
+                  <button class="metric-btn selected" data-metric="MA" data-value="X" id="MA-X">Not Defined <span class="metric-short">(X)</span></button>
+                  <button class="metric-btn" data-metric="MA" data-value="N" id="MA-N">None <span class="metric-short">(N)</span></button>
+                  <button class="metric-btn" data-metric="MA" data-value="L" id="MA-L">Low <span class="metric-short">(L)</span></button>
+                  <button class="metric-btn" data-metric="MA" data-value="H" id="MA-H">High <span class="metric-short">(H)</span></button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- About Tab -->
+    <div class="tab-content" id="tab-about">
+      <div class="about-container">
+        <div class="about-card">
+          <h1>About MPSS</h1>
+          <p class="about-lead">MPSS (Metric-based Product Security Scoring) is a vulnerability scoring calculator that implements the <strong>CVSS v3.1</strong> specification with complete accuracy.</p>
+
+          <div class="about-section">
+            <h2>Scoring Methodology</h2>
+            <p>MPSS uses the exact formulas defined in the <a href="https://www.first.org/cvss/v3.1/specification-document" target="_blank" rel="noopener">CVSS v3.1 Specification Document</a> published by FIRST.Org, Inc. All metric values, equations, and the Roundup function are implemented precisely as specified.</p>
+          </div>
+
+          <div class="about-section">
+            <h2>Severity Ratings</h2>
+            <div class="severity-table">
+              <div class="severity-row">
+                <span class="severity-badge severity-none">None</span>
+                <span class="severity-range">0.0</span>
+              </div>
+              <div class="severity-row">
+                <span class="severity-badge severity-low">Low</span>
+                <span class="severity-range">0.1 – 3.9</span>
+              </div>
+              <div class="severity-row">
+                <span class="severity-badge severity-medium">Medium</span>
+                <span class="severity-range">4.0 – 6.9</span>
+              </div>
+              <div class="severity-row">
+                <span class="severity-badge severity-high">High</span>
+                <span class="severity-range">7.0 – 8.9</span>
+              </div>
+              <div class="severity-row">
+                <span class="severity-badge severity-critical">Critical</span>
+                <span class="severity-range">9.0 – 10.0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-section">
+            <h2>Three Metric Groups</h2>
+            <div class="about-metrics-grid">
+              <div class="about-metric-card">
+                <div class="about-metric-icon base">B</div>
+                <h3>Base</h3>
+                <p>Intrinsic vulnerability characteristics that are constant over time and across environments. Includes Exploitability and Impact sub-scores.</p>
+              </div>
+              <div class="about-metric-card">
+                <div class="about-metric-icon temporal">T</div>
+                <h3>Temporal</h3>
+                <p>Characteristics that change over time, such as exploit code availability, remediation status, and reporting confidence.</p>
+              </div>
+              <div class="about-metric-card">
+                <div class="about-metric-icon env">E</div>
+                <h3>Environmental</h3>
+                <p>Characteristics unique to the user's environment, including security requirements and modified base metrics.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-section">
+            <h2>Attribution</h2>
+            <p>CVSS is owned and managed by <a href="https://www.first.org" target="_blank" rel="noopener">FIRST.Org, Inc.</a> MPSS uses the CVSS v3.1 scoring specification with permission. CVSS is a registered trademark of FIRST.Org, Inc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span id="toast-message">Copied!</span>
+  </div>
+
+  <script src="cvss.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
