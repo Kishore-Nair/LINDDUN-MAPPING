@@ -1,0 +1,120 @@
+# ---------------------------------------------------------------------------
+# LINDDUN-MAPPING / C3-VULMAP v2 — ignore rules
+#
+# Policy: this repository tracks CODE, MAPPING TABLES and DOCUMENTATION.
+# Raw corpora and build artifacts are NOT tracked: several exceed GitHub's
+# 100 MB hard per-file limit, and all of them are reproducible by running the
+# numbered pipeline scripts. See c3_vulmap_v2/RUNGUIDE.md to regenerate them
+# and cve_linddun/DATASET_CARD.md for how the released dataset is built.
+# ---------------------------------------------------------------------------
+
+# --- macOS cruft -----------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Editors / tooling -----------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Claude Code workspace -------------------------------------------------
+# .claude/ holds a git worktree belonging to a DIFFERENT repository
+# (the home-directory repo). It must never be committed here.
+.claude/
+
+# --- Vendored upstream history ---------------------------------------------
+# c3_vulmap_v2/ is vendored from https://github.com/juxam/C3-VULMAP (CC0 1.0).
+# Its original .git was renamed aside so the files could be tracked here as
+# normal content. Keep that history local; do not publish it.
+c3_vulmap_v2/.git.upstream-backup/
+
+# ===========================================================================
+# RAW INPUT CORPORA — too large for git, download separately
+# ===========================================================================
+
+# ReposVul C/C++ archive (~2.9 GB)
+ReposVul_c_cpp.tar
+*.tar
+*.tar.gz
+*.tgz
+
+# DiverseVul release (~703 MB)
+diversevul_20230702.json
+
+# Liu et al. CVE/CWE export (~98 MB) and the Kaggle CVE mirror (~46 MB)
+CVE_CWE_2025_Z_liu.csv
+CVE_Kaggle/
+
+# Local zip snapshot of the pipeline directory
+c3_vulmap_v2.zip
+*.zip
+
+# ===========================================================================
+# BUILD ARTIFACTS — regenerate with the numbered pipeline scripts
+# ===========================================================================
+
+# Per-source and merged row dumps (339 MB - 718 MB each)
+c3_vulmap_v2_build/diversevul_rows.jsonl
+c3_vulmap_v2_build/reposvul_rows.jsonl
+c3_vulmap_v2_build/merged_deduped.jsonl
+c3_vulmap_v2_build/merged_with_linddun.jsonl
+
+# Columnar corpora and the released dataset (34 MB - 213 MB each)
+*.parquet
+
+# Split directories, caches and model checkpoints
+c3_vulmap_v2_build/splits/
+c3_vulmap_v2_build/cache/
+*.ckpt
+*.pt
+*.bin
+*.h5
+*.npy
+*.npz
+
+# ===========================================================================
+# PRIVACY — unredacted personal material
+# ===========================================================================
+
+# Scanned diary photo: contains a supervisor's handwritten signature.
+*.heic
+project diary.heic
+
+# Meeting recordings/transcripts naming third parties. Excluded by default;
+# remove this rule deliberately if you intend to publish them.
+Meeting transcript/
+
+# --- Logs and scratch ------------------------------------------------------
+*.log
+logs/
+tmp/
+scratch/
+nohup.out
