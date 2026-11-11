@@ -1,0 +1,43 @@
+{
+  "generated_utc": "2026-10-09T16:47:00.579158+00:00",
+  "n_rows": 395200,
+  "n_vulnerable": 19212,
+  "prevalence": 0.04861336032388664,
+  "by_source": {
+    "diversevul": 255576,
+    "reposvul": 139484,
+    "synthetic_v2": 140
+  },
+  "by_split_project": {
+    "test": {
+      "size": 82469,
+      "sum": 3592
+    },
+    "train": {
+      "size": 273639,
+      "sum": 13667
+    },
+    "val": {
+      "size": 39092,
+      "sum": 1953
+    }
+  },
+  "by_split_random": {
+    "test": {
+      "size": 79040,
+      "sum": 3842
+    },
+    "train": {
+      "size": 316160,
+      "sum": 15370
+    }
+  },
+  "metadata_only_auroc_project_split": 0.7184406771948758,
+  "contamination_rate": 0.00021002024291497977,
+  "linddun_coverage": 0.5401543522267207,
+  "cwe_category_raw_source": "/Users/kishore/Desktop/FINAL YEAR PROJ/c3_vulmap_v2/cwe_linddun_mapping main.csv",
+  "cwe_category_to_linddun_source": "/Users/kishore/Desktop/FINAL YEAR PROJ/c3_vulmap_v2/actual mapping to linddun.csv",
+  "min_code_chars": 40,
+  "near_dup_threshold": 0.7,
+  "seed": 42
+}

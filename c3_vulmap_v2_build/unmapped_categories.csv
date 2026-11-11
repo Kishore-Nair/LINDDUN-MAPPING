@@ -1,0 +1,3 @@
+category_cwe_id,category_name,n_rows_affected
+CWE-189,Numeric Errors,23514
+CWE-371,State Issues,20

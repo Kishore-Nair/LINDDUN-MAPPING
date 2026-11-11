@@ -1,0 +1,42 @@
+category_cwe_id,linddun_category
+CWE-1006,Unawareness
+CWE-1210,Non-repudiation
+CWE-1211,Identifiability
+CWE-1211,Linkability
+CWE-1212,Linkability
+CWE-1212,Non-compliance
+CWE-1213,Detectability
+CWE-1213,Identifiability
+CWE-1213,Linkability
+CWE-1214,Data Disclosure
+CWE-1214,Non-compliance
+CWE-1215,Data Disclosure
+CWE-1215,Linkability
+CWE-1216,Identifiability
+CWE-1217,Identifiability
+CWE-1217,Linkability
+CWE-1218,Data Disclosure
+CWE-1218,Linkability
+CWE-1219,Data Disclosure
+CWE-1219,Linkability
+CWE-1228,Unawareness
+CWE-200,Data Disclosure
+CWE-200,Identifiability
+CWE-200,Linkability
+CWE-254,Detectability
+CWE-254,Non-compliance
+CWE-265,Linkability
+CWE-265,Non-compliance
+CWE-275,Linkability
+CWE-275,Non-compliance
+CWE-310,Detectability
+CWE-310,Identifiability
+CWE-310,Linkability
+CWE-387,Non-repudiation
+CWE-399,Data Disclosure
+CWE-417,Data Disclosure
+CWE-417,Detectability
+CWE-465,Linkability
+CWE-557,Non-repudiation
+CWE-633,Data Disclosure
+CWE-633,Linkability

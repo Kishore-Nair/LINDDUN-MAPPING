@@ -1,0 +1,18 @@
+{
+  "n_rows": 395200,
+  "n_flagged": 83,
+  "by_source": {
+    "diversevul": 70,
+    "reposvul": 13
+  },
+  "by_source_total": {
+    "diversevul": 255576,
+    "reposvul": 139484,
+    "synthetic_v2": 140
+  },
+  "by_pattern": {
+    "toy_user_leaky": 70,
+    "self_naming_leaky": 4,
+    "toy_secret_leaky": 9
+  }
+}

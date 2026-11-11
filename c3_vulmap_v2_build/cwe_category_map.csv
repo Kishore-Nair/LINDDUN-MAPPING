@@ -1,0 +1,440 @@
+cwe_id,category_cwe_id,category_name
+CWE-1006,CWE-1006,Bad Coding Practices
+CWE-242,CWE-1006,Bad Coding Practices
+CWE-477,CWE-1006,Bad Coding Practices
+CWE-676,CWE-1006,Bad Coding Practices
+CWE-704,CWE-1006,Bad Coding Practices
+CWE-758,CWE-1006,Bad Coding Practices
+CWE-484,CWE-1006,Bad Coding Practices
+CWE-489,CWE-1006,Bad Coding Practices
+CWE-478,CWE-1006,Bad Coding Practices
+CWE-480,CWE-1006,Bad Coding Practices
+CWE-482,CWE-1006,Bad Coding Practices
+CWE-483,CWE-1006,Bad Coding Practices
+CWE-561,CWE-1006,Bad Coding Practices
+CWE-570,CWE-1006,Bad Coding Practices
+CWE-571,CWE-1006,Bad Coding Practices
+CWE-1210,CWE-1210,Audit / Logging Errors
+CWE-117,CWE-1210,Audit / Logging Errors
+CWE-223,CWE-1210,Audit / Logging Errors
+CWE-532,CWE-1210,Audit / Logging Errors
+CWE-778,CWE-1210,Audit / Logging Errors
+CWE-779,CWE-1210,Audit / Logging Errors
+CWE-1211,CWE-1211,Authentication Errors
+CWE-287,CWE-1211,Authentication Errors
+CWE-288,CWE-1211,Authentication Errors
+CWE-289,CWE-1211,Authentication Errors
+CWE-290,CWE-1211,Authentication Errors
+CWE-294,CWE-1211,Authentication Errors
+CWE-295,CWE-1211,Authentication Errors
+CWE-301,CWE-1211,Authentication Errors
+CWE-302,CWE-1211,Authentication Errors
+CWE-303,CWE-1211,Authentication Errors
+CWE-304,CWE-1211,Authentication Errors
+CWE-305,CWE-1211,Authentication Errors
+CWE-306,CWE-1211,Authentication Errors
+CWE-307,CWE-1211,Authentication Errors
+CWE-308,CWE-1211,Authentication Errors
+CWE-309,CWE-1211,Authentication Errors
+CWE-521,CWE-1211,Authentication Errors
+CWE-522,CWE-1211,Authentication Errors
+CWE-593,CWE-1211,Authentication Errors
+CWE-613,CWE-1211,Authentication Errors
+CWE-620,CWE-1211,Authentication Errors
+CWE-640,CWE-1211,Authentication Errors
+CWE-836,CWE-1211,Authentication Errors
+CWE-916,CWE-1211,Authentication Errors
+CWE-1212,CWE-1212,Authorization Errors
+CWE-219,CWE-1212,Authorization Errors
+CWE-220,CWE-1212,Authorization Errors
+CWE-264,CWE-1212,Authorization Errors
+CWE-265,CWE-1212,Authorization Errors
+CWE-266,CWE-1212,Authorization Errors
+CWE-267,CWE-1212,Authorization Errors
+CWE-268,CWE-1212,Authorization Errors
+CWE-269,CWE-1212,Authorization Errors
+CWE-270,CWE-1212,Authorization Errors
+CWE-271,CWE-1212,Authorization Errors
+CWE-272,CWE-1212,Authorization Errors
+CWE-273,CWE-1212,Authorization Errors
+CWE-274,CWE-1212,Authorization Errors
+CWE-277,CWE-1212,Authorization Errors
+CWE-280,CWE-1212,Authorization Errors
+CWE-281,CWE-1212,Authorization Errors
+CWE-282,CWE-1212,Authorization Errors
+CWE-283,CWE-1212,Authorization Errors
+CWE-284,CWE-1212,Authorization Errors
+CWE-285,CWE-1212,Authorization Errors
+CWE-552,CWE-1212,Authorization Errors
+CWE-639,CWE-1212,Authorization Errors
+CWE-732,CWE-1212,Authorization Errors
+CWE-862,CWE-1212,Authorization Errors
+CWE-863,CWE-1212,Authorization Errors
+CWE-1213,CWE-1213,Random Number Issues
+CWE-330,CWE-1213,Random Number Issues
+CWE-331,CWE-1213,Random Number Issues
+CWE-332,CWE-1213,Random Number Issues
+CWE-333,CWE-1213,Random Number Issues
+CWE-334,CWE-1213,Random Number Issues
+CWE-335,CWE-1213,Random Number Issues
+CWE-336,CWE-1213,Random Number Issues
+CWE-337,CWE-1213,Random Number Issues
+CWE-338,CWE-1213,Random Number Issues
+CWE-339,CWE-1213,Random Number Issues
+CWE-340,CWE-1213,Random Number Issues
+CWE-341,CWE-1213,Random Number Issues
+CWE-342,CWE-1213,Random Number Issues
+CWE-343,CWE-1213,Random Number Issues
+CWE-344,CWE-1213,Random Number Issues
+CWE-1214,CWE-1214,Data Integrity Issues
+CWE-353,CWE-1214,Data Integrity Issues
+CWE-354,CWE-1214,Data Integrity Issues
+CWE-390,CWE-1214,Data Integrity Issues
+CWE-391,CWE-1214,Data Integrity Issues
+CWE-392,CWE-1214,Data Integrity Issues
+CWE-394,CWE-1214,Data Integrity Issues
+CWE-395,CWE-1214,Data Integrity Issues
+CWE-754,CWE-1214,Data Integrity Issues
+CWE-755,CWE-1214,Data Integrity Issues
+CWE-240,CWE-1214,Data Integrity Issues
+CWE-241,CWE-1214,Data Integrity Issues
+CWE-1215,CWE-1215,Data Validation Issues
+CWE-15,CWE-1215,Data Validation Issues
+CWE-20,CWE-1215,Data Validation Issues
+CWE-74,CWE-1215,Data Validation Issues
+CWE-77,CWE-1215,Data Validation Issues
+CWE-78,CWE-1215,Data Validation Issues
+CWE-79,CWE-1215,Data Validation Issues
+CWE-89,CWE-1215,Data Validation Issues
+CWE-90,CWE-1215,Data Validation Issues
+CWE-91,CWE-1215,Data Validation Issues
+CWE-93,CWE-1215,Data Validation Issues
+CWE-94,CWE-1215,Data Validation Issues
+CWE-95,CWE-1215,Data Validation Issues
+CWE-96,CWE-1215,Data Validation Issues
+CWE-97,CWE-1215,Data Validation Issues
+CWE-98,CWE-1215,Data Validation Issues
+CWE-99,CWE-1215,Data Validation Issues
+CWE-113,CWE-1215,Data Validation Issues
+CWE-116,CWE-1215,Data Validation Issues
+CWE-138,CWE-1215,Data Validation Issues
+CWE-170,CWE-1215,Data Validation Issues
+CWE-179,CWE-1215,Data Validation Issues
+CWE-180,CWE-1215,Data Validation Issues
+CWE-183,CWE-1215,Data Validation Issues
+CWE-184,CWE-1215,Data Validation Issues
+CWE-470,CWE-1215,Data Validation Issues
+CWE-502,CWE-1215,Data Validation Issues
+CWE-601,CWE-1215,Data Validation Issues
+CWE-611,CWE-1215,Data Validation Issues
+CWE-643,CWE-1215,Data Validation Issues
+CWE-644,CWE-1215,Data Validation Issues
+CWE-917,CWE-1215,Data Validation Issues
+CWE-1216,CWE-1216,Lockout Mechanism Errors
+CWE-645,CWE-1216,Lockout Mechanism Errors
+CWE-1217,CWE-1217,User Session Errors
+CWE-384,CWE-1217,User Session Errors
+CWE-613,CWE-1217,User Session Errors
+CWE-614,CWE-1217,User Session Errors
+CWE-1218,CWE-1218,Memory Buffer Errors
+CWE-119,CWE-1218,Memory Buffer Errors
+CWE-120,CWE-1218,Memory Buffer Errors
+CWE-121,CWE-1218,Memory Buffer Errors
+CWE-122,CWE-1218,Memory Buffer Errors
+CWE-123,CWE-1218,Memory Buffer Errors
+CWE-124,CWE-1218,Memory Buffer Errors
+CWE-125,CWE-1218,Memory Buffer Errors
+CWE-126,CWE-1218,Memory Buffer Errors
+CWE-127,CWE-1218,Memory Buffer Errors
+CWE-129,CWE-1218,Memory Buffer Errors
+CWE-130,CWE-1218,Memory Buffer Errors
+CWE-131,CWE-1218,Memory Buffer Errors
+CWE-134,CWE-1218,Memory Buffer Errors
+CWE-135,CWE-1218,Memory Buffer Errors
+CWE-170,CWE-1218,Memory Buffer Errors
+CWE-415,CWE-1218,Memory Buffer Errors
+CWE-416,CWE-1218,Memory Buffer Errors
+CWE-590,CWE-1218,Memory Buffer Errors
+CWE-680,CWE-1218,Memory Buffer Errors
+CWE-785,CWE-1218,Memory Buffer Errors
+CWE-786,CWE-1218,Memory Buffer Errors
+CWE-787,CWE-1218,Memory Buffer Errors
+CWE-788,CWE-1218,Memory Buffer Errors
+CWE-805,CWE-1218,Memory Buffer Errors
+CWE-806,CWE-1218,Memory Buffer Errors
+CWE-822,CWE-1218,Memory Buffer Errors
+CWE-823,CWE-1218,Memory Buffer Errors
+CWE-824,CWE-1218,Memory Buffer Errors
+CWE-825,CWE-1218,Memory Buffer Errors
+CWE-1219,CWE-1219,File Handling Issues
+CWE-22,CWE-1219,File Handling Issues
+CWE-23,CWE-1219,File Handling Issues
+CWE-24,CWE-1219,File Handling Issues
+CWE-25,CWE-1219,File Handling Issues
+CWE-26,CWE-1219,File Handling Issues
+CWE-27,CWE-1219,File Handling Issues
+CWE-28,CWE-1219,File Handling Issues
+CWE-29,CWE-1219,File Handling Issues
+CWE-30,CWE-1219,File Handling Issues
+CWE-31,CWE-1219,File Handling Issues
+CWE-32,CWE-1219,File Handling Issues
+CWE-33,CWE-1219,File Handling Issues
+CWE-34,CWE-1219,File Handling Issues
+CWE-35,CWE-1219,File Handling Issues
+CWE-36,CWE-1219,File Handling Issues
+CWE-37,CWE-1219,File Handling Issues
+CWE-38,CWE-1219,File Handling Issues
+CWE-39,CWE-1219,File Handling Issues
+CWE-40,CWE-1219,File Handling Issues
+CWE-41,CWE-1219,File Handling Issues
+CWE-42,CWE-1219,File Handling Issues
+CWE-43,CWE-1219,File Handling Issues
+CWE-44,CWE-1219,File Handling Issues
+CWE-45,CWE-1219,File Handling Issues
+CWE-46,CWE-1219,File Handling Issues
+CWE-47,CWE-1219,File Handling Issues
+CWE-48,CWE-1219,File Handling Issues
+CWE-49,CWE-1219,File Handling Issues
+CWE-50,CWE-1219,File Handling Issues
+CWE-51,CWE-1219,File Handling Issues
+CWE-52,CWE-1219,File Handling Issues
+CWE-53,CWE-1219,File Handling Issues
+CWE-54,CWE-1219,File Handling Issues
+CWE-55,CWE-1219,File Handling Issues
+CWE-56,CWE-1219,File Handling Issues
+CWE-57,CWE-1219,File Handling Issues
+CWE-58,CWE-1219,File Handling Issues
+CWE-59,CWE-1219,File Handling Issues
+CWE-61,CWE-1219,File Handling Issues
+CWE-62,CWE-1219,File Handling Issues
+CWE-64,CWE-1219,File Handling Issues
+CWE-65,CWE-1219,File Handling Issues
+CWE-66,CWE-1219,File Handling Issues
+CWE-67,CWE-1219,File Handling Issues
+CWE-69,CWE-1219,File Handling Issues
+CWE-72,CWE-1219,File Handling Issues
+CWE-73,CWE-1219,File Handling Issues
+CWE-363,CWE-1219,File Handling Issues
+CWE-426,CWE-1219,File Handling Issues
+CWE-427,CWE-1219,File Handling Issues
+CWE-310,CWE-310,Cryptographic Issues
+CWE-295,CWE-310,Cryptographic Issues
+CWE-296,CWE-310,Cryptographic Issues
+CWE-297,CWE-310,Cryptographic Issues
+CWE-298,CWE-310,Cryptographic Issues
+CWE-310,CWE-310,Cryptographic Issues
+CWE-311,CWE-310,Cryptographic Issues
+CWE-312,CWE-310,Cryptographic Issues
+CWE-313,CWE-310,Cryptographic Issues
+CWE-314,CWE-310,Cryptographic Issues
+CWE-315,CWE-310,Cryptographic Issues
+CWE-316,CWE-310,Cryptographic Issues
+CWE-317,CWE-310,Cryptographic Issues
+CWE-318,CWE-310,Cryptographic Issues
+CWE-319,CWE-310,Cryptographic Issues
+CWE-320,CWE-310,Cryptographic Issues
+CWE-321,CWE-310,Cryptographic Issues
+CWE-325,CWE-310,Cryptographic Issues
+CWE-326,CWE-310,Cryptographic Issues
+CWE-327,CWE-310,Cryptographic Issues
+CWE-328,CWE-310,Cryptographic Issues
+CWE-329,CWE-310,Cryptographic Issues
+CWE-347,CWE-310,Cryptographic Issues
+CWE-348,CWE-310,Cryptographic Issues
+CWE-522,CWE-310,Cryptographic Issues
+CWE-523,CWE-310,Cryptographic Issues
+CWE-614,CWE-310,Cryptographic Issues
+CWE-757,CWE-310,Cryptographic Issues
+CWE-759,CWE-310,Cryptographic Issues
+CWE-760,CWE-310,Cryptographic Issues
+CWE-780,CWE-310,Cryptographic Issues
+CWE-916,CWE-310,Cryptographic Issues
+CWE-417,CWE-417,Communication Channel Errors
+CWE-300,CWE-417,Communication Channel Errors
+CWE-319,CWE-417,Communication Channel Errors
+CWE-322,CWE-417,Communication Channel Errors
+CWE-346,CWE-417,Communication Channel Errors
+CWE-419,CWE-417,Communication Channel Errors
+CWE-420,CWE-417,Communication Channel Errors
+CWE-421,CWE-417,Communication Channel Errors
+CWE-940,CWE-417,Communication Channel Errors
+CWE-941,CWE-417,Communication Channel Errors
+CWE-200,CWE-200,Information Exposure
+CWE-200,CWE-200,Information Exposure
+CWE-201,CWE-200,Information Exposure
+CWE-202,CWE-200,Information Exposure
+CWE-203,CWE-200,Information Exposure
+CWE-204,CWE-200,Information Exposure
+CWE-205,CWE-200,Information Exposure
+CWE-206,CWE-200,Information Exposure
+CWE-207,CWE-200,Information Exposure
+CWE-208,CWE-200,Information Exposure
+CWE-209,CWE-200,Information Exposure
+CWE-210,CWE-200,Information Exposure
+CWE-211,CWE-200,Information Exposure
+CWE-212,CWE-200,Information Exposure
+CWE-213,CWE-200,Information Exposure
+CWE-214,CWE-200,Information Exposure
+CWE-215,CWE-200,Information Exposure
+CWE-359,CWE-200,Information Exposure
+CWE-497,CWE-200,Information Exposure
+CWE-524,CWE-200,Information Exposure
+CWE-526,CWE-200,Information Exposure
+CWE-538,CWE-200,Information Exposure
+CWE-598,CWE-200,Information Exposure
+CWE-254,CWE-254,Security Features
+CWE-254,CWE-254,Security Features
+CWE-259,CWE-254,Security Features
+CWE-261,CWE-254,Security Features
+CWE-321,CWE-254,Security Features
+CWE-521,CWE-254,Security Features
+CWE-327,CWE-254,Security Features
+CWE-311,CWE-254,Security Features
+CWE-345,CWE-254,Security Features
+CWE-1228,CWE-1228,API / Function Errors
+CWE-242,CWE-1228,API / Function Errors
+CWE-243,CWE-1228,API / Function Errors
+CWE-244,CWE-1228,API / Function Errors
+CWE-248,CWE-1228,API / Function Errors
+CWE-250,CWE-1228,API / Function Errors
+CWE-252,CWE-1228,API / Function Errors
+CWE-253,CWE-1228,API / Function Errors
+CWE-263,CWE-1228,API / Function Errors
+CWE-325,CWE-1228,API / Function Errors
+CWE-374,CWE-1228,API / Function Errors
+CWE-375,CWE-1228,API / Function Errors
+CWE-477,CWE-1228,API / Function Errors
+CWE-558,CWE-1228,API / Function Errors
+CWE-676,CWE-1228,API / Function Errors
+CWE-399,CWE-399,Resource Management Errors
+CWE-400,CWE-399,Resource Management Errors
+CWE-401,CWE-399,Resource Management Errors
+CWE-404,CWE-399,Resource Management Errors
+CWE-459,CWE-399,Resource Management Errors
+CWE-410,CWE-399,Resource Management Errors
+CWE-664,CWE-399,Resource Management Errors
+CWE-668,CWE-399,Resource Management Errors
+CWE-669,CWE-399,Resource Management Errors
+CWE-672,CWE-399,Resource Management Errors
+CWE-674,CWE-399,Resource Management Errors
+CWE-770,CWE-399,Resource Management Errors
+CWE-771,CWE-399,Resource Management Errors
+CWE-772,CWE-399,Resource Management Errors
+CWE-773,CWE-399,Resource Management Errors
+CWE-774,CWE-399,Resource Management Errors
+CWE-775,CWE-399,Resource Management Errors
+CWE-776,CWE-399,Resource Management Errors
+CWE-920,CWE-399,Resource Management Errors
+CWE-557,CWE-557,Concurrency Issues
+CWE-362,CWE-557,Concurrency Issues
+CWE-364,CWE-557,Concurrency Issues
+CWE-366,CWE-557,Concurrency Issues
+CWE-367,CWE-557,Concurrency Issues
+CWE-374,CWE-557,Concurrency Issues
+CWE-412,CWE-557,Concurrency Issues
+CWE-413,CWE-557,Concurrency Issues
+CWE-414,CWE-557,Concurrency Issues
+CWE-421,CWE-557,Concurrency Issues
+CWE-543,CWE-557,Concurrency Issues
+CWE-558,CWE-557,Concurrency Issues
+CWE-567,CWE-557,Concurrency Issues
+CWE-572,CWE-557,Concurrency Issues
+CWE-609,CWE-557,Concurrency Issues
+CWE-662,CWE-557,Concurrency Issues
+CWE-663,CWE-557,Concurrency Issues
+CWE-764,CWE-557,Concurrency Issues
+CWE-765,CWE-557,Concurrency Issues
+CWE-820,CWE-557,Concurrency Issues
+CWE-821,CWE-557,Concurrency Issues
+CWE-832,CWE-557,Concurrency Issues
+CWE-833,CWE-557,Concurrency Issues
+CWE-265,CWE-265,Privilege Issues
+CWE-250,CWE-265,Privilege Issues
+CWE-266,CWE-265,Privilege Issues
+CWE-267,CWE-265,Privilege Issues
+CWE-268,CWE-265,Privilege Issues
+CWE-269,CWE-265,Privilege Issues
+CWE-270,CWE-265,Privilege Issues
+CWE-271,CWE-265,Privilege Issues
+CWE-272,CWE-265,Privilege Issues
+CWE-273,CWE-265,Privilege Issues
+CWE-274,CWE-265,Privilege Issues
+CWE-275,CWE-275,Permission Issues
+CWE-276,CWE-275,Permission Issues
+CWE-277,CWE-275,Permission Issues
+CWE-278,CWE-275,Permission Issues
+CWE-279,CWE-275,Permission Issues
+CWE-280,CWE-275,Permission Issues
+CWE-281,CWE-275,Permission Issues
+CWE-282,CWE-275,Permission Issues
+CWE-283,CWE-275,Permission Issues
+CWE-732,CWE-275,Permission Issues
+CWE-465,CWE-465,Pointer Issues
+CWE-415,CWE-465,Pointer Issues
+CWE-416,CWE-465,Pointer Issues
+CWE-457,CWE-465,Pointer Issues
+CWE-463,CWE-465,Pointer Issues
+CWE-467,CWE-465,Pointer Issues
+CWE-468,CWE-465,Pointer Issues
+CWE-476,CWE-465,Pointer Issues
+CWE-561,CWE-465,Pointer Issues
+CWE-587,CWE-465,Pointer Issues
+CWE-588,CWE-465,Pointer Issues
+CWE-822,CWE-465,Pointer Issues
+CWE-823,CWE-465,Pointer Issues
+CWE-824,CWE-465,Pointer Issues
+CWE-825,CWE-465,Pointer Issues
+CWE-1225,CWE-1225,Documentation Issues
+CWE-1053,CWE-1225,Documentation Issues
+CWE-1054,CWE-1225,Documentation Issues
+CWE-1055,CWE-1225,Documentation Issues
+CWE-1057,CWE-1225,Documentation Issues
+CWE-1058,CWE-1225,Documentation Issues
+CWE-371,CWE-371,State Issues
+CWE-364,CWE-371,State Issues
+CWE-372,CWE-371,State Issues
+CWE-374,CWE-371,State Issues
+CWE-375,CWE-371,State Issues
+CWE-411,CWE-411,Resource Locking Problems
+CWE-412,CWE-411,Resource Locking Problems
+CWE-413,CWE-411,Resource Locking Problems
+CWE-414,CWE-411,Resource Locking Problems
+CWE-764,CWE-411,Resource Locking Problems
+CWE-765,CWE-411,Resource Locking Problems
+CWE-832,CWE-411,Resource Locking Problems
+CWE-833,CWE-411,Resource Locking Problems
+CWE-189,CWE-189,Numeric Errors
+CWE-128,CWE-189,Numeric Errors
+CWE-190,CWE-189,Numeric Errors
+CWE-191,CWE-189,Numeric Errors
+CWE-192,CWE-189,Numeric Errors
+CWE-193,CWE-189,Numeric Errors
+CWE-194,CWE-189,Numeric Errors
+CWE-195,CWE-189,Numeric Errors
+CWE-196,CWE-189,Numeric Errors
+CWE-197,CWE-189,Numeric Errors
+CWE-369,CWE-189,Numeric Errors
+CWE-681,CWE-189,Numeric Errors
+CWE-682,CWE-189,Numeric Errors
+CWE-839,CWE-189,Numeric Errors
+CWE-438,CWE-438,Behavioral Problems
+CWE-390,CWE-438,Behavioral Problems
+CWE-391,CWE-438,Behavioral Problems
+CWE-392,CWE-438,Behavioral Problems
+CWE-393,CWE-438,Behavioral Problems
+CWE-394,CWE-438,Behavioral Problems
+CWE-395,CWE-438,Behavioral Problems
+CWE-397,CWE-438,Behavioral Problems
+CWE-455,CWE-438,Behavioral Problems
+CWE-584,CWE-438,Behavioral Problems
+CWE-387,CWE-387,Signal Errors
+CWE-364,CWE-387,Signal Errors
+CWE-432,CWE-387,Signal Errors
+CWE-455,CWE-387,Signal Errors
+CWE-479,CWE-387,Signal Errors
+CWE-633,CWE-633,Web Problems
+CWE-79,CWE-633,Web Problems
+CWE-89,CWE-633,Web Problems
+CWE-352,CWE-633,Web Problems
+CWE-601,CWE-633,Web Problems
+CWE-611,CWE-633,Web Problems

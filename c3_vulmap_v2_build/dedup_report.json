@@ -1,0 +1,25 @@
+{
+  "sources_found": [
+    "diversevul",
+    "reposvul",
+    "synthetic"
+  ],
+  "n_before_dedup": 561609,
+  "n_after_dedup": 395200,
+  "conflicting_dropped": 9589,
+  "duplicate_copies_dropped": 156820,
+  "by_source": {
+    "diversevul": {
+      "n": 255576,
+      "n_vulnerable": 14515
+    },
+    "reposvul": {
+      "n": 139484,
+      "n_vulnerable": 4557
+    },
+    "synthetic_v2": {
+      "n": 140,
+      "n_vulnerable": 140
+    }
+  }
+}

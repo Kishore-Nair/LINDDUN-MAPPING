@@ -1,0 +1,10 @@
+{
+  "n_rows": 395200,
+  "n_rows_full_chain": 213469,
+  "n_rows_no_cwe": 47870,
+  "n_rows_hop1_gap": 19415,
+  "n_rows_excluded_cwe": 10687,
+  "n_cwes_excluded_present": 1,
+  "n_categories_hop2_filled": 23,
+  "n_categories_hop2_gap": 2
+}

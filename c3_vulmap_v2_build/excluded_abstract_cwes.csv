@@ -1,0 +1,7 @@
+cwe_id,verification_status,mitre_mapping_guidance,abstraction,note
+CWE-119,confirmed,DISCOURAGED,Class,"Improper Restriction of Operations within the Bounds of a Memory Buffer. Confirmed against MITRE in CONSTRUCTION.md; signal expected via more specific children."
+CWE-20,confirmed,DISCOURAGED,Class,"Improper Input Validation. Confirmed against MITRE in CONSTRUCTION.md; signal expected via more specific children."
+CWE-703,confirmed,DISCOURAGED,Pillar,"Improper Check or Handling of Exceptional Conditions. Confirmed against MITRE in CONSTRUCTION.md. No category entry in this machine's hop-1 map, so exclusion is report-bucket only."
+CWE-400,confirmed,DISCOURAGED,Class,"Uncontrolled Resource Consumption. Confirmed against MITRE in CONSTRUCTION.md; signal expected via more specific children."
+CWE-362,confirmed,ALLOWED-WITH-REVIEW,Class,"Concurrent Execution using Shared Resource with Improper Synchronization. Same abstraction guidance per CONSTRUCTION.md."
+CWE-284,confirmed,DISCOURAGED,Pillar,"Improper Access Control. Pillar-level and discouraged per CONSTRUCTION.md."

@@ -1,0 +1,26 @@
+{
+  "n_rows": 395200,
+  "cwes_reviewed": 18,
+  "cwes_changed": 14,
+  "rows_changed": 137043,
+  "class_before": {
+    "Linkability": 184264,
+    "Non-compliance": 23507,
+    "Data Disclosure": 153197,
+    "Identifiability": 29239,
+    "Detectability": 12303,
+    "Non-repudiation": 448,
+    "Unawareness": 782
+  },
+  "class_after": {
+    "Linkability": 60708,
+    "Non-compliance": 23507,
+    "Data Disclosure": 140356,
+    "Detectability": 50088,
+    "Identifiability": 29239,
+    "Non-repudiation": 448,
+    "Unawareness": 782
+  },
+  "disagreement_sample": 4000,
+  "disagreement_rate": 0.2265
+}
