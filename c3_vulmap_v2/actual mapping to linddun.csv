@@ -1,0 +1,42 @@
+category_name,linddun_category,source
+Bad Coding Practices,Unawareness,UseMisuse Cases vs CWE Category PDF
+Audit / Logging Errors,Non-repudiation,UseMisuse Cases vs CWE Category PDF
+Authentication Errors,Identifiability,UseMisuse Cases vs CWE Category PDF
+Authentication Errors,Linkability,UseMisuse Cases vs CWE Category PDF
+Authorization Errors,Linkability,UseMisuse Cases vs CWE Category PDF
+Authorization Errors,Non-compliance,UseMisuse Cases vs CWE Category PDF
+Random Number Issues,Detectability,CONSTRUCTION.md - mirrors Cryptographic Issues
+Random Number Issues,Identifiability,CONSTRUCTION.md - mirrors Cryptographic Issues
+Random Number Issues,Linkability,CONSTRUCTION.md - mirrors Cryptographic Issues
+Data Integrity Issues,Non-compliance,UseMisuse Cases vs CWE Category PDF
+Data Integrity Issues,Data Disclosure,UseMisuse Cases vs CWE Category PDF
+Data Validation Issues,Linkability,UseMisuse Cases vs CWE Category PDF
+Data Validation Issues,Data Disclosure,UseMisuse Cases vs CWE Category PDF
+Lockout Mechanism Errors,Identifiability,UseMisuse Cases vs CWE Category PDF
+User Session Errors,Identifiability,UseMisuse Cases vs CWE Category PDF
+User Session Errors,Linkability,UseMisuse Cases vs CWE Category PDF
+Memory Buffer Errors,Linkability,UseMisuse Cases vs CWE Category PDF
+Memory Buffer Errors,Data Disclosure,UseMisuse Cases vs CWE Category PDF
+File Handling Issues,Data Disclosure,UseMisuse Cases vs CWE Category PDF
+File Handling Issues,Linkability,UseMisuse Cases vs CWE Category PDF
+Cryptographic Issues,Detectability,UseMisuse Cases vs CWE Category PDF
+Cryptographic Issues,Identifiability,UseMisuse Cases vs CWE Category PDF
+Cryptographic Issues,Linkability,UseMisuse Cases vs CWE Category PDF
+Communication Channel Errors,Detectability,UseMisuse Cases vs CWE Category PDF
+Communication Channel Errors,Data Disclosure,UseMisuse Cases vs CWE Category PDF
+Information Exposure,Data Disclosure,UseMisuse Cases vs CWE Category PDF
+Information Exposure,Linkability,UseMisuse Cases vs CWE Category PDF
+Information Exposure,Identifiability,UseMisuse Cases vs CWE Category PDF
+Security Features,Detectability,UseMisuse Cases vs CWE Category PDF
+Security Features,Non-compliance,UseMisuse Cases vs CWE Category PDF
+API / Function Errors,Unawareness,UseMisuse Cases vs CWE Category PDF
+Resource Management Errors,Data Disclosure,CONSTRUCTION.md - member CWE-770 already target
+Concurrency Issues,Non-repudiation,CONSTRUCTION.md - member CWE-364 already target
+Privilege Issues,Linkability,CONSTRUCTION.md - mirrors Authorization Errors
+Privilege Issues,Non-compliance,CONSTRUCTION.md - mirrors Authorization Errors
+Permission Issues,Linkability,CONSTRUCTION.md - mirrors Authorization Errors
+Permission Issues,Non-compliance,CONSTRUCTION.md - mirrors Authorization Errors
+Pointer Issues,Linkability,CONSTRUCTION.md - mirrors Memory Buffer Errors
+Signal Errors,Non-repudiation,UseMisuse Cases vs CWE Category PDF
+Web Problems,Data Disclosure,UseMisuse Cases vs CWE Category PDF
+Web Problems,Linkability,UseMisuse Cases vs CWE Category PDF

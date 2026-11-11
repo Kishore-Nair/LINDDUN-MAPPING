@@ -1,0 +1,412 @@
+CWE CATEGORY,CWE,DESCRIPTION
+1006-Bad Coding Practices,"242-Use of Inherently Dangerous Function
+477-Use of Obsolete Function
+676-Use of Potentially Dangerous Function
+704-Incorrect Type Conversion or Cast
+758-Reliance on Undefined Undocumented or Implementation-Defined Behavior
+484-Omitted Break Statement in Switch
+489-Active Debug Code
+478-Missing Default Case in Multiple Condition Expression
+480-Use of Incorrect Operator
+482-Comparing instead of Assigning
+483-Incorrect Block Delimitation
+561-Dead Code
+570-Expression is Always False
+571-Expression is Always True","Weaknesses in this category are related to coding practices that are considered unsafe."
+1210-Audit / Logging Errors,"117-Improper Output Neutralization for Logs
+223-Omission of Security-relevant Information
+532-Insertion of Sensitive Information into Log File
+778-Insufficient Logging
+779-Logging of Excessive Data","Weaknesses in this category are related to audit or logging errors."
+1211-Authentication Errors,"287-Improper Authentication
+288-Authentication Bypass Using an Alternate Path or Channel
+289-Authentication Bypass by Alternate Name
+290-Authentication Bypass by Spoofing
+294-Authentication Bypass by Capture-replay
+295-Improper Certificate Validation
+301-Reflection Attack in an Authentication Protocol
+302-Authentication Bypass by Assumed-Immutable Data
+303-Incorrect Implementation of Authentication Algorithm
+304-Missing Critical Step in Authentication
+305-Authentication Bypass by Primary Weakness
+306-Missing Authentication for Critical Function
+307-Improper Restriction of Excessive Authentication Attempts
+308-Use of Single-factor Authentication
+309-Use of Password System for Primary Authentication
+521-Weak Password Requirements
+522-Insufficiently Protected Credentials
+593-Authentication Bypass OpenRedirect
+613-Insufficient Session Expiration
+620-Unverified Password Change
+640-Weak Password Recovery Mechanism for Forgotten Password
+836-Use of Password Hash Instead of Password for Authentication
+916-Use of Password Hash With Insufficient Computational Effort","Weaknesses in this category are related to authentication errors."
+1212-Authorization Errors,"219-Storage of File with Sensitive Data Under Web Root
+220-Storage of File With Sensitive Data Under FTP Root
+264-Permissions Privileges and Access Controls
+265-Privilege Issues
+266-Incorrect Privilege Assignment
+267-Privilege Defined With Unsafe Actions
+268-Privilege Chaining
+269-Improper Privilege Management
+270-Privilege Context Switching Error
+271-Privilege Dropping / Lowering Errors
+272-Least Privilege Violation
+273-Improper Check for Dropped Privileges
+274-Improper Handling of Insufficient Privileges
+277-Insecure Inherited Permissions
+280-Improper Handling of Insufficient Permissions or Privileges
+281-Improper Preservation of Permissions
+282-Improper Ownership Management
+283-Unverified Ownership
+284-Improper Access Control
+285-Improper Authorization
+552-Files or Directories Accessible to External Parties
+639-Authorization Bypass Through User-Controlled Key
+732-Incorrect Permission Assignment for Critical Resource
+862-Missing Authorization
+863-Incorrect Authorization","Weaknesses in this category are related to authorization errors."
+1213-Random Number Issues,"330-Use of Insufficiently Random Values
+331-Insufficient Entropy
+332-Insufficient Entropy in PRNG
+333-Improper Handling of Insufficient Entropy in TRNG
+334-Small Space of Random Values
+335-Incorrect Usage of Seeds in Pseudo-Random Number Generator
+336-Same Seed in Pseudo-Random Number Generator
+337-Predictable Seed in Pseudo-Random Number Generator
+338-Use of Cryptographically Weak Pseudo-Random Number Generator
+339-Small Seed Space in PRNG
+340-Generation of Predictable Numbers or Identifiers
+341-Predictable from Observable State
+342-Predictable Exact Value from Previous Values
+343-Predictable Value Range from Previous Values
+344-Use of Invariant Value in Dynamically Changing Context","Weaknesses in this category are related to random number issues."
+1214-Data Integrity Issues,"353-Missing Support for Integrity Check
+354-Improper Validation of Integrity Check Value
+390-Detection of Error Condition Without Action
+391-Unchecked Error Condition
+392-Missing Report of Error Condition
+394-Unexpected Status Code or Return Value
+395-Use of NullPointerException Catch to Detect NULL Pointer Dereference
+754-Improper Check for Unusual or Exceptional Conditions
+755-Improper Handling of Exceptional Conditions
+240-Improper Handling of Inconsistent Structural Elements
+241-Improper Handling of Unexpected Data Type","Weaknesses in this category are related to data integrity issues."
+1215-Data Validation Issues,"15-External Control of System or Configuration Setting
+20-Improper Input Validation
+74-Improper Neutralization of Special Elements in Output Used by a Downstream Component
+77-Improper Neutralization of Special Elements used in a Command
+78-Improper Neutralization of Special Elements used in an OS Command
+79-Improper Neutralization of Input During Web Page Generation
+89-Improper Neutralization of Special Elements used in an SQL Command
+90-Improper Neutralization of Special Elements used in an LDAP Query
+91-XML Injection
+93-Improper Neutralization of CRLF Sequences
+94-Improper Control of Generation of Code
+95-Improper Neutralization of Directives in Dynamically Evaluated Code
+96-Improper Neutralization of Directives in Statically Saved Code
+97-Improper Neutralization of Server-Side Includes Within a Web Page
+98-Improper Control of Filename for Include/Require Statement in PHP Program
+99-Improper Control of Resource Identifiers
+113-Improper Neutralization of CRLF Sequences in HTTP Headers
+116-Improper Encoding or Escaping of Output
+138-Improper Neutralization of Special Elements
+170-Improper Null Termination
+179-Incorrect Behavior Order Early Validation
+180-Incorrect Behavior Order Validate Before Canonicalize
+183-Permissive List of Allowed Inputs
+184-Incomplete List of Disallowed Inputs
+470-Use of Externally-Controlled Input to Select Classes or Code
+502-Deserialization of Untrusted Data
+601-URL Redirection to Untrusted Site
+611-Improper Restriction of XML External Entity Reference
+643-Improper Neutralization of Data within XPath Expressions
+644-Improper Neutralization of HTTP Headers for Scripting Syntax
+917-Improper Neutralization of Special Elements used in an Expression Language Statement","Weaknesses in this category are related to data validation issues."
+1216-Lockout Mechanism Errors,"645-Overly Restrictive Account Lockout Mechanism","Weaknesses in this category are related to lockout mechanism errors."
+1217-User Session Errors,"384-Session Fixation
+613-Insufficient Session Expiration
+614-Sensitive Cookie in HTTPS Session Without Secure Attribute","Weaknesses in this category are related to user session errors."
+1218-Memory Buffer Errors,"119-Improper Restriction of Operations within the Bounds of a Memory Buffer
+120-Buffer Copy without Checking Size of Input
+121-Stack-based Buffer Overflow
+122-Heap-based Buffer Overflow
+123-Write-what-where Condition
+124-Buffer Underwrite
+125-Out-of-bounds Read
+126-Buffer Over-read
+127-Buffer Under-read
+129-Improper Validation of Array Index
+130-Improper Handling of Length Parameter Inconsistency
+131-Incorrect Calculation of Buffer Size
+134-Use of Externally-Controlled Format String
+135-Incorrect Calculation of Multi-Byte String Length
+170-Improper Null Termination
+415-Double Free
+416-Use After Free
+590-Free of Memory not on the Heap
+680-Integer Overflow to Buffer Overflow
+785-Use of Path Manipulation Function without Maximum-sized Buffer
+786-Access of Memory Location Before Start of Buffer
+787-Out-of-bounds Write
+788-Access of Memory Location After End of Buffer
+805-Buffer Access with Incorrect Length Value
+806-Buffer Access Using Size of Source Buffer
+822-Untrusted Pointer Dereference
+823-Use of Out-of-range Pointer Offset
+824-Access of Uninitialized Pointer
+825-Expired Pointer Dereference","Weaknesses in this category are related to memory buffer errors."
+1219-File Handling Issues,"22-Improper Limitation of a Pathname to a Restricted Directory
+23-Relative Path Traversal
+24-Path Traversal
+25-Path Traversal
+26-Path Traversal
+27-Path Traversal
+28-Path Traversal
+29-Path Traversal
+30-Path Traversal
+31-Path Traversal
+32-Path Traversal
+33-Path Traversal
+34-Path Traversal
+35-Path Traversal
+36-Absolute Path Traversal
+37-Path Traversal
+38-Path Traversal
+39-Path Traversal
+40-Path Traversal
+41-Improper Resolution of Path Equivalence
+42-Path Equivalence
+43-Path Equivalence
+44-Path Equivalence
+45-Path Equivalence
+46-Path Equivalence
+47-Path Equivalence
+48-Path Equivalence
+49-Path Equivalence
+50-Path Equivalence
+51-Path Equivalence
+52-Path Equivalence
+53-Path Equivalence
+54-Path Equivalence
+55-Path Equivalence
+56-Path Equivalence
+57-Path Equivalence
+58-Path Equivalence
+59-Improper Link Resolution Before File Access
+61-UNIX Symbolic Link Following
+62-UNIX Hard Link
+64-Windows Shortcut Following
+65-Windows Hard Link
+66-Improper Handling of File Names that Identify Virtual Resources
+67-Improper Handling of Windows Device Names
+69-Improper Handling of Windows ::DATA Alternate Data Stream
+72-Improper Handling of Apple HFS+ Alternate Data Stream
+73-External Control of File Name or Path
+363-Race Condition Enabling Link Following
+426-Untrusted Search Path
+427-Uncontrolled Search Path Element","Weaknesses in this category are related to file handling issues."
+310-Cryptographic Issues,"295-Improper Certificate Validation
+296-Improper Following of a Certificates Chain of Trust
+297-Improper Validation of Certificate with Host Mismatch
+298-Improper Validation of Certificate Expiration
+310-Cryptographic Issues
+311-Missing Encryption of Sensitive Data
+312-Cleartext Storage of Sensitive Information
+313-Cleartext Storage in a File
+314-Cleartext Storage in the Registry
+315-Cleartext Storage of Sensitive Information in a Cookie
+316-Cleartext Storage of Sensitive Information in Memory
+317-Cleartext Storage of Sensitive Information in GUI
+318-Cleartext Storage of Sensitive Information in Executable
+319-Cleartext Transmission of Sensitive Information
+320-Key Management Errors
+321-Use of Hard-coded Cryptographic Key
+325-Missing Cryptographic Step
+326-Inadequate Encryption Strength
+327-Use of a Broken or Risky Cryptographic Algorithm
+328-Use of Weak Hash
+329-Generation of Predictable IV with CBC Mode
+347-Improper Verification of Cryptographic Signature
+348-Use of Less Trusted Source
+522-Insufficiently Protected Credentials
+523-Unprotected Transport of Credentials
+614-Sensitive Cookie in HTTPS Session Without Secure Attribute
+757-Selection of Less-Secure Algorithm During Negotiation
+759-Use of a One-Way Hash without a Salt
+760-Use of a One-Way Hash with a Predictable Salt
+780-Use of RSA Algorithm without OAEP
+916-Use of Password Hash With Insufficient Computational Effort","Weaknesses in this category are related to cryptographic issues."
+417-Communication Channel Errors,"300-Channel Accessible by Non-Endpoint
+319-Cleartext Transmission of Sensitive Information
+322-Key Exchange without Entity Authentication
+346-Origin Validation Error
+419-Unprotected Primary Channel
+420-Unprotected Alternate Channel
+421-Race Condition During Access to Alternate Channel
+940-Improper Verification of Source of a Communication Channel
+941-Incorrectly Specified Destination in a Communication Channel","Weaknesses in this category are related to communication channel errors."
+200-Information Exposure,"200-Exposure of Sensitive Information to an Unauthorized Actor
+201-Insertion of Sensitive Information Into Sent Data
+202-Exposure of Sensitive Information Through Data Queries
+203-Observable Discrepancy
+204-Observable Response Discrepancy
+205-Observable Behavioral Discrepancy
+206-Observable Internal Behavioral Discrepancy
+207-Observable Behavioral Discrepancy With Equivalent Products
+208-Observable Timing Discrepancy
+209-Generation of Error Message Containing Sensitive Information
+210-Self-generated Error Message Containing Sensitive Information
+211-Externally-Generated Error Message Containing Sensitive Information
+212-Improper Removal of Sensitive Information Before Storage or Transfer
+213-Exposure of Sensitive Information Due to Incompatible Policies
+214-Invocation of Process Using Visible Sensitive Information
+215-Insertion of Sensitive Information Into Debugging Code
+359-Exposure of Private Personal Information to an Unauthorized Actor
+497-Exposure of Sensitive System Information to an Unauthorized Actor
+524-Use of Cache Containing Sensitive Information
+526-Cleartext Storage of Sensitive Information in an Environment Variable
+538-Insertion of Sensitive Information into Externally-Accessible File or Directory
+598-Use of GET Request Method With Sensitive Query Strings","Weaknesses in this category are related to information exposure."
+254-Security Features,"254-7PK Security Features
+259-Use of Hard-coded Password
+261-Weak Encoding for Password
+321-Use of Hard-coded Cryptographic Key
+521-Weak Password Requirements
+327-Use of a Broken or Risky Cryptographic Algorithm
+311-Missing Encryption of Sensitive Data
+345-Insufficient Verification of Data Authenticity","Weaknesses in this category are related to security features."
+1228-API / Function Errors,"242-Use of Inherently Dangerous Function
+243-Creation of chroot Jail Without Changing Working Directory
+244-Improper Clearing of Heap Memory Before Release
+248-Uncaught Exception
+250-Execution with Unnecessary Privileges
+252-Unchecked Return Value
+253-Incorrect Check of Function Return Value
+263-Password Aging with Long Expiration
+325-Missing Cryptographic Step
+374-Passing Mutable Objects to an Untrusted Method
+375-Returning a Mutable Object to an Untrusted Caller
+477-Use of Obsolete Function
+558-Use of getlogin in Multithreaded Application
+676-Use of Potentially Dangerous Function","Weaknesses in this category are related to API and function errors."
+399-Resource Management Errors,"400-Uncontrolled Resource Consumption
+401-Missing Release of Memory after Effective Lifetime
+404-Improper Resource Shutdown or Release
+459-Incomplete Cleanup
+410-Insufficient Resource Pool
+664-Improper Control of a Resource Through its Lifetime
+668-Exposure of Resource to Wrong Sphere
+669-Incorrect Resource Transfer Between Spheres
+672-Operation on a Resource after Expiration or Release
+674-Uncontrolled Recursion
+770-Allocation of Resources Without Limits or Throttling
+771-Missing Reference to Active Allocated Resource
+772-Missing Release of Resource after Effective Lifetime
+773-Missing Reference to Active File Descriptor or Handle
+774-Allocation of File Descriptors or Handles Without Limits or Throttling
+775-Missing Release of File Descriptor or Handle after Effective Lifetime
+776-Improper Restriction of Recursive Entity References in DTDs
+920-Improper Restriction of Power Consumption","Weaknesses in this category are related to resource management errors."
+557-Concurrency Issues,"362-Concurrent Execution using Shared Resource with Improper Synchronization
+364-Signal Handler Race Condition
+366-Race Condition within a Thread
+367-Time-of-check Time-of-use
+374-Passing Mutable Objects to an Untrusted Method
+412-Unrestricted Externally Accessible Lock
+413-Improper Resource Locking
+414-Missing Lock Check
+421-Race Condition During Access to Alternate Channel
+543-Use of Singleton Pattern Without Synchronization in a Multithreaded Context
+558-Use of getlogin in Multithreaded Application
+567-Unsynchronized Access to Shared Data in a Multithreaded Context
+572-Call to Thread run instead of Thread start
+609-Double-Checked Locking
+662-Improper Synchronization
+663-Use of a Non-reentrant Function in a Concurrent Context
+764-Multiple Locks of a Critical Resource
+765-Multiple Unlocks of a Critical Resource
+820-Missing Synchronization
+821-Incorrect Synchronization
+832-Unlock of a Resource that is not Locked
+833-Deadlock","Weaknesses in this category are related to concurrency issues."
+265-Privilege Issues,"250-Execution with Unnecessary Privileges
+266-Incorrect Privilege Assignment
+267-Privilege Defined With Unsafe Actions
+268-Privilege Chaining
+269-Improper Privilege Management
+270-Privilege Context Switching Error
+271-Privilege Dropping / Lowering Errors
+272-Least Privilege Violation
+273-Improper Check for Dropped Privileges
+274-Improper Handling of Insufficient Privileges","Weaknesses in this category are related to privilege issues."
+275-Permission Issues,"276-Incorrect Default Permissions
+277-Insecure Inherited Permissions
+278-Insecure Preserved Inherited Permissions
+279-Incorrect Execution-Assigned Permissions
+280-Improper Handling of Insufficient Permissions or Privileges
+281-Improper Preservation of Permissions
+282-Improper Ownership Management
+283-Unverified Ownership
+732-Incorrect Permission Assignment for Critical Resource","Weaknesses in this category are related to permission issues."
+465-Pointer Issues,"415-Double Free
+416-Use After Free
+457-Use of Uninitialized Variable
+463-Deletion of Data Structure Sentinel
+467-Use of sizeof on a Pointer Type
+468-Incorrect Pointer Scaling
+476-NULL Pointer Dereference
+561-Dead Code
+587-Assignment of a Fixed Address to a Pointer
+588-Attempt to Access Child of a Non-structure Pointer
+822-Untrusted Pointer Dereference
+823-Use of Out-of-range Pointer Offset
+824-Access of Uninitialized Pointer
+825-Expired Pointer Dereference","Weaknesses in this category are related to pointer issues."
+1225-Documentation Issues,"1053-Missing Documentation for Design
+1054-Invocation of a Control Element at an Unnecessarily Deep Horizontal Layer
+1055-Multiple Inheritance from Concrete Classes
+1057-Data Access Operations Outside of Expected Data Manager Component
+1058-Invocation of Class Methods Without a Locked Object","Weaknesses in this category are related to documentation issues."
+371-State Issues,"364-Signal Handler Race Condition
+372-Incomplete Internal State Distinction
+374-Passing Mutable Objects to an Untrusted Method
+375-Returning a Mutable Object to an Untrusted Caller","Weaknesses in this category are related to state issues."
+411-Resource Locking Problems,"412-Unrestricted Externally Accessible Lock
+413-Improper Resource Locking
+414-Missing Lock Check
+764-Multiple Locks of a Critical Resource
+765-Multiple Unlocks of a Critical Resource
+832-Unlock of a Resource that is not Locked
+833-Deadlock","Weaknesses in this category are related to resource locking problems."
+189-Numeric Errors,"128-Wrap-around Error
+190-Integer Overflow or Wraparound
+191-Integer Underflow
+192-Integer Coercion Error
+193-Off-by-one Error
+194-Unexpected Sign Extension
+195-Signed to Unsigned Conversion Error
+196-Unsigned to Signed Conversion Error
+197-Numeric Truncation Error
+369-Divide By Zero
+681-Incorrect Conversion between Numeric Types
+682-Incorrect Calculation
+839-Numeric Range Comparison Without Minimum Check","Weaknesses in this category are related to numeric errors."
+438-Behavioral Problems,"390-Detection of Error Condition Without Action
+391-Unchecked Error Condition
+392-Missing Report of Error Condition
+393-Return of Wrong Status Code
+394-Unexpected Status Code or Return Value
+395-Use of NullPointerException Catch to Detect NULL Pointer Dereference
+397-Declaration of Throws for Generic Exception
+455-Non-exit on Failed Initialization
+584-Return Inside Finally Block","Weaknesses in this category are related to behavioral problems."
+387-Signal Errors,"364-Signal Handler Race Condition
+432-Dangerous Signal Handler not Disabled During Sensitive Operations
+455-Non-exit on Failed Initialization
+479-Signal Handler Use of a Non-reentrant Function","Weaknesses in this category are related to signal errors."
+633-Web Problems,"79-Cross-site Scripting
+89-SQL Injection
+352-Cross-Site Request Forgery
+601-URL Redirection to Untrusted Site
+611-Improper Restriction of XML External Entity Reference","Weaknesses in this category are related to web problems."
