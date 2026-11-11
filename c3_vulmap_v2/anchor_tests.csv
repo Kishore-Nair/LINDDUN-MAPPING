@@ -1,0 +1,18 @@
+cwe_id,must_include,name,why_this_is_an_anchor
+CWE-532,Data Disclosure,Insertion of Sensitive Information into Log File,the CWE name states the effect - sensitive information is exposed
+CWE-209,Data Disclosure,Generation of Error Message Containing Sensitive Information,name states sensitive information is exposed
+CWE-215,Data Disclosure,Insertion of Sensitive Information Into Debugging Code,name states sensitive information is exposed
+CWE-359,Data Disclosure,Exposure of Private Personal Information to an Unauthorized Actor,name states exposure of personal information
+CWE-201,Data Disclosure,Insertion of Sensitive Information Into Sent Data,name states sensitive information is exposed
+CWE-312,Data Disclosure,Cleartext Storage of Sensitive Information,name states sensitive information is stored readable
+CWE-319,Data Disclosure,Cleartext Transmission of Sensitive Information,name states sensitive information is transmitted readable
+CWE-200,Data Disclosure,Exposure of Sensitive Information to an Unauthorized Actor,the canonical privacy CWE
+CWE-798,Identifiability,Use of Hard-coded Credentials,a credential names a principal
+CWE-306,Identifiability,Missing Authentication for Critical Function,authentication failure is an identity concern
+CWE-640,Identifiability,Weak Password Recovery Mechanism,account recovery is an identity concern
+CWE-287,Identifiability,Improper Authentication,authentication is the identity control
+CWE-778,Non-repudiation,Insufficient Logging,absent logs destroy attributability
+CWE-117,Non-repudiation,Improper Output Neutralization for Logs,log forging destroys attributability
+CWE-223,Non-repudiation,Omission of Security-relevant Information,missing records destroy attributability
+CWE-863,Non-compliance,Incorrect Authorization,authorisation failure is a policy violation
+CWE-250,Non-compliance,Execution with Unnecessary Privileges,least-privilege is a policy duty
