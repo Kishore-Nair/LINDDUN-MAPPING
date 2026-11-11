@@ -1,0 +1,8 @@
+linddun,requires_any,note
+Linkability,phi;phi_identifier,needs identifiers or health records that can be correlated to one patient
+Identifiability,phi_identifier;credential,needs a direct identifier or credential that names a person
+Non-repudiation,audit;phi,needs an attributable record of a patient action
+Detectability,credential;external,"needs an observable response or communication (auth errors, outbound traffic)"
+Data Disclosure,phi;phi_identifier;credential,needs data whose exposure is itself the harm
+Unawareness,phi;phi_identifier,needs patient data processed where the subject may not see or control it
+Non-compliance,phi;phi_identifier;credential,needs regulated personal data for GDPR-style duties to attach

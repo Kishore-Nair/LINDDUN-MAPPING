@@ -1,0 +1,12 @@
+segment,note
+src,source root
+main,Maven source root
+test,Maven test root
+java,Maven language dir
+resources,Maven resources dir
+org,Java package prefix
+com,Java package prefix
+io,Java package prefix
+bahmni,vendor package segment - repo specific
+openmrs,vendor package segment - repo specific
+module,vendor package segment - repo specific

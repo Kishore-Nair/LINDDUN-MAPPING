@@ -1,0 +1,180 @@
+bahmni-system
+├── bahmni
+│   ├── apps
+│   │   ├── registration
+│   │   │   └── src
+│   │   │       ├── hooks
+│   │   │       │   ├── useCreatePatient.ts
+│   │   │       │   └── usePatientSearch.ts
+│   │   │       ├── utils
+│   │   │       │   └── fhirPatientMapper.ts
+│   │   │       ├── components
+│   │   │       │   ├── forms
+│   │   │       │   │   ├── addressInfo
+│   │   │       │   │   │   └── AddressInfo.tsx
+│   │   │       │   │   ├── contactInfo
+│   │   │       │   │   │   └── ContactInfo.tsx
+│   │   │       │   │   └── patientRelationships
+│   │   │       │   │       └── PatientRelationships.tsx
+│   │   │       │   └── patientPhotoUpload
+│   │   │       │       └── PatientPhotoUpload.tsx
+│   │   │       ├── pages
+│   │   │       │   └── PatientRegister
+│   │   │       │       └── PatientRegister.tsx
+│   │   │       └── __tests__
+│   │   │           └── App.test.tsx
+│   │   ├── clinical
+│   │   │   └── src
+│   │   │       ├── services
+│   │   │       │   ├── encounterBundleService.ts
+│   │   │       │   └── medicationService.ts
+│   │   │       ├── stores
+│   │   │       │   ├── allergyStore.ts
+│   │   │       │   └── conditionsAndDiagnosesStore.ts
+│   │   │       ├── components
+│   │   │       │   └── patientSearch
+│   │   │       │       └── PatientSearch.tsx
+│   │   │       └── utils
+│   │   │           └── fhir
+│   │   │               └── allergyResourceCreator.ts
+│   │   ├── admin
+│   │   │   └── src
+│   │   │       ├── hooks
+│   │   │       │   └── useAuditLogs.ts
+│   │   │       └── pages
+│   │   │           ├── AuditLog.tsx
+│   │   │           ├── CsvExport.tsx
+│   │   │           └── CsvUpload.tsx
+│   │   └── patient-documents
+│   │       └── src
+│   │           ├── services
+│   │           │   └── visitDocumentSaveService.ts
+│   │           └── hooks
+│   │               └── useVisitDocuments.ts
+│   └── packages
+│       ├── bahmni-services
+│       │   └── src
+│       │       ├── patientService
+│       │       │   └── patientService.ts
+│       │       ├── authService
+│       │       │   └── authService.ts
+│       │       ├── auditLogService
+│       │       │   └── auditLogService.ts
+│       │       ├── privilegeService
+│       │       │   └── privilegeService.ts
+│       │       ├── documentUploadService
+│       │       │   └── documentUploadService.ts
+│       │       ├── cameraService
+│       │       │   └── useCamera.ts
+│       │       └── api
+│       │           └── client.ts
+│       └── bahmni-widgets
+│           └── src
+│               ├── patientDetails
+│               │   └── PatientDetails.tsx
+│               ├── search
+│               │   └── searchPatient
+│               │       └── SearchPatient.tsx
+│               └── commandPalette
+│                   └── CommandPalette.tsx
+└── core
+    ├── admin
+    │   └── src
+    │       ├── main
+    │       │   └── java
+    │       │       └── org
+    │       │           └── bahmni
+    │       │               └── module
+    │       │                   └── admin
+    │       │                       └── csv
+    │       │                           ├── persister
+    │       │                           │   └── PatientPersister.java
+    │       │                           ├── service
+    │       │                           │   └── CSVPatientService.java
+    │       │                           └── patientmatchingalgorithm
+    │       │                               └── BahmniPatientMatchingAlgorithm.java
+    │       └── test
+    │           └── java
+    │               └── org
+    │                   └── bahmni
+    │                       └── module
+    │                           └── admin
+    │                               └── csv
+    │                                   └── service
+    │                                       └── CSVPatientServiceTest.java
+    ├── bahmnicore-api
+    │   ├── src
+    │   │   └── main
+    │   │       └── java
+    │   │           └── org
+    │   │               └── bahmni
+    │   │                   └── module
+    │   │                       └── bahmnicore
+    │   │                           ├── client
+    │   │                           │   └── BahmniOdooClient.java
+    │   │                           ├── events
+    │   │                           │   └── eventListener
+    │   │                           │       └── PatientSmsEventListener.java
+    │   │                           ├── service
+    │   │                           │   └── impl
+    │   │                           │       ├── PatientDocumentServiceImpl.java
+    │   │                           │       └── SqlSearchServiceImpl.java
+    │   │                           ├── dao
+    │   │                           │   └── impl
+    │   │                           │       └── PersonAttributeDaoImpl.java
+    │   │                           └── security
+    │   │                               └── PrivilegeConstants.java
+    │   └── target
+    │       └── classes
+    │           └── org
+    │               └── bahmni
+    │                   └── module
+    │                       └── bahmnicore
+    │                           └── client
+    │                               └── BahmniOdooClient.class
+    ├── bahmnicore-omod
+    │   └── src
+    │       └── main
+    │           └── java
+    │               └── org
+    │                   └── bahmni
+    │                       └── module
+    │                           └── bahmnicore
+    │                               └── web
+    │                                   └── v1_0
+    │                                       └── controller
+    │                                           ├── EmailCommunicationController.java
+    │                                           └── BahmniPatientImageController.java
+    ├── openmrs-elis-atomfeed-client-omod
+    │   └── src
+    │       └── main
+    │           └── java
+    │               └── org
+    │                   └── bahmni
+    │                       └── module
+    │                           └── elisatomfeedclient
+    │                               └── api
+    │                                   └── worker
+    │                                       └── OpenElisPatientFeedWorker.java
+    ├── jss-old-data
+    │   └── src
+    │       └── main
+    │           └── java
+    │               └── org
+    │                   └── bahmni
+    │                       └── datamigration
+    │                           └── csv
+    │                               └── PatientPersister.java
+    └── obs-relation
+        └── src
+            └── main
+                └── java
+                    └── org
+                        └── bahmni
+                            └── module
+                                └── obsrelationship
+                                    └── dao
+                                        └── impl
+                                            └── ObsRelationshipDaoImpl.java
+
+0 directories, 47 files

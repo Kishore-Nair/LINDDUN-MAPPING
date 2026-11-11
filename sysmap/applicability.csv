@@ -1,0 +1,22 @@
+role,linddun,basis
+external_entity,Linkability,LINDDUN element table - entities are linkable data subjects
+external_entity,Identifiability,LINDDUN element table - entities are identifiable data subjects
+external_entity,Unawareness,LINDDUN element table - unawareness applies only to data subjects
+data_store,Linkability,LINDDUN element table
+data_store,Identifiability,LINDDUN element table
+data_store,Non-repudiation,LINDDUN element table
+data_store,Detectability,LINDDUN element table
+data_store,Data Disclosure,LINDDUN element table
+data_store,Non-compliance,LINDDUN element table
+data_flow,Linkability,LINDDUN element table
+data_flow,Identifiability,LINDDUN element table
+data_flow,Non-repudiation,LINDDUN element table
+data_flow,Detectability,LINDDUN element table
+data_flow,Data Disclosure,LINDDUN element table
+data_flow,Non-compliance,LINDDUN element table
+process,Linkability,LINDDUN element table
+process,Identifiability,LINDDUN element table
+process,Non-repudiation,LINDDUN element table
+process,Detectability,LINDDUN element table
+process,Data Disclosure,LINDDUN element table
+process,Non-compliance,LINDDUN element table

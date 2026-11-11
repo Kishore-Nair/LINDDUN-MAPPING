@@ -1,0 +1,39 @@
+pattern,kind,value,note
+(^|/)target/,exclude,,Maven build output - mirrors src, would double-count every class
+(^|/)node_modules/,exclude,,dependencies
+(^|/)__tests__/,exclude,,test code
+(^|/)__mocks__/,exclude,,test fixtures
+(^|/)__snapshots__/,exclude,,test snapshots
+\.test\.[tj]sx?$,exclude,,test file
+\.spec\.[tj]sx?$,exclude,,test file
+Test\.java$,exclude,,JUnit test
+IT\.java$,exclude,,integration test
+Mocks?\.ts$,exclude,,test fixtures
+(^|/)src/test/,exclude,,Maven test tree
+\.class$,exclude,,compiled artifact
+\.(scss|css|snap|ico|png|svg|lock)$,exclude,,asset or lockfile
+(^|/)(docs|doc)/,exclude,,documentation
+(^|/)helm/,exclude,,deployment manifest
+(^|/)locales?/,exclude,,translation bundles
+(tsconfig|eslint|jest|vite|webpack|stylelint|pom|nx)\.,exclude,,build configuration
+(^|/)scripts?/,exclude,,build scripts
+odoo,role,data_flow,ERP/billing integration - crosses an organisational boundary
+elisatomfeed|elis,role,data_flow,external laboratory system feed
+atomfeed|feed,role,data_flow,event feed published outside the module
+sms|email|mail,role,data_flow,outbound patient communication
+export|import|csv|upload|download,role,data_flow,bulk data movement in or out
+client|/api/,role,data_flow,outbound API call
+event|publisher|listener|interceptor|advice,role,data_flow,event propagation
+persister|dao|repository|store|cache|hbm,role,data_store,persistence
+document|photo|image|video|attachment|file,role,data_store,stored patient artefact
+auditlog|audit,role,data_store,audit trail store
+sql|query|search,role,process,query construction and search
+service|controller|resource|handler|mapper|helper|validator|calculator,role,process,business logic
+hook|provider|context|registry|strategy|command|task,role,process,application logic
+page|pages|view|widget|component|layout|tile|table|form|modal|palette,role,external_entity,user-facing surface
+app\.tsx|index\.html|main\.tsx|routes,role,external_entity,application shell
+patient|person|allergy|diagnos|condition|medication|drug|observation|obs|encounter|visit|immunization|lab|radiology|program|appointment|episode|relationship|vital|prescription,data,phi,patient health information
+address|contact|telecom|photo|identifier|demographic|registration|name,data,phi_identifier,direct or quasi identifier
+auth|password|credential|privilege|session|login|user|whoami|token,data,credential,authentication or authorisation material
+audit|log,data,audit,attributable activity record
+config|template|concept|location|provider|inventory|stock|report|task|note,data,operational,non-patient operational data

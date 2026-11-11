@@ -1,0 +1,20 @@
+linddun,branch,leaf,source
+Linkability,User linked using identifiers,"User name / Patient number / Staff number / Hospital number",LINDDUN_Threat Trees.pdf p1
+Linkability,User linked using combination or analysis of data,"PII such as age and gender; quasi-identifiers (location trace); browser/app fingerprint metadata",LINDDUN_Threat Trees.pdf p1
+Linkability,User linked using combination or analysis of data,"Analysing timing patterns in application use; application requests to external parties",LINDDUN_Threat Trees.pdf p1
+Identifiability,Identity information,"Processing of identified info such as patient full name and addressing during user registration",LINDDUN_Threat Trees.pdf p2
+Identifiability,Identity information,"Creating user login credentials using first- and last-name",LINDDUN_Threat Trees.pdf p2
+Identifiability,Identity information in metadata,"Identified information stored in metadata of stored or transmitted patient files",LINDDUN_Threat Trees.pdf p2
+Identifiability,Patient is distinguishable from others,"Unique search queries may be used to identify patient; data in a feedback form can uniquely identify the patient",LINDDUN_Threat Trees.pdf p2
+Non-repudiation,Attributable data that is evidence worthy,"Patient data / signed data / metadata; read notifications; embedded or hidden data",LINDDUN_Threat Trees.pdf p3
+Non-repudiation,Attributable action side-effect,"System logs attributing an action to a patient or clinician; document metadata; watermarked data",LINDDUN_Threat Trees.pdf p3
+Detectability,System responses,"Wrong password error reveals account existence; firewall closed error confirms a system at the IP address",LINDDUN_Threat Trees.pdf p4
+Detectability,Side effect of the application used by the patient,"Communication to a telemedicine service implies the user is a patient; system logs show usage by other users",LINDDUN_Threat Trees.pdf p4
+Data Disclosure,Unnecessary data types,"Treatment, analysis, enrichment, transformation (e.g. face recognition, emotion detection)",LINDDUN_Threat Trees.pdf p5
+Data Disclosure,Implicit data disclosure,"Propagation - information such as patient location shared to locations where it is not needed",LINDDUN_Threat Trees.pdf p5
+Data Disclosure,Excess data volume,"Amount, frequency and retention of patient data beyond what the service requires",LINDDUN_Threat Trees.pdf p5
+Data Disclosure,Involved parties and exposure,"Patient personal data shared with other users or patients; availability of published data sets",LINDDUN_Threat Trees.pdf p5
+Unawareness,Unawareness of processing,"Patient unaware of the third parties with whom their data are shared",LINDDUN_Threat Trees.pdf p6
+Unawareness,Lack of data subject control,"Patient lacks control in setting preferences or consenting to how personal data is processed, or in rectifying/removing data",LINDDUN_Threat Trees.pdf p6
+Non-compliance,Regulatory non-compliance,"GDPR - insufficient patient controls, violation of data minimisation, unlawful processing, violation of storage limitation",LINDDUN_Threat Trees.pdf p7
+Non-compliance,Insufficient cybersecurity risk management,"No security assessment taken on the medical application; operational security (outdated medical software)",LINDDUN_Threat Trees.pdf p7
