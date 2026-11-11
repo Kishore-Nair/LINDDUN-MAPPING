@@ -1,0 +1,36 @@
+{
+  "source": "CVE_CWE_2025_Z_liu.csv",
+  "n_rows": 280694,
+  "n_labelled": 174294,
+  "coverage": 0.6209395284544735,
+  "status": {
+    "cwe_excluded": 30014,
+    "no_cwe": 55550,
+    "mapped": 174294,
+    "cwe_has_no_category": 16181,
+    "category_has_no_linddun": 4655
+  },
+  "linddun_class_counts": {
+    "Data Disclosure": 132066,
+    "Identifiability": 26696,
+    "Linkability": 123401,
+    "Non-compliance": 21968,
+    "Detectability": 16331,
+    "Unawareness": 702,
+    "Non-repudiation": 1397
+  },
+  "cvss_coverage": 0.9925042929310922,
+  "cvss_by_version": {
+    "v2": 72517,
+    "v3": 198604,
+    "v4": 7469
+  },
+  "year_min": 1999,
+  "year_max": 2025,
+  "split": {
+    "train": 196489,
+    "test": 56137,
+    "val": 28068
+  },
+  "seed": 42
+}

@@ -1,0 +1,48 @@
+{
+  "concentration": {
+    "Data Disclosure": {
+      "rows": 132066,
+      "cwes": 145,
+      "top_cwe": "CWE-79",
+      "top_share": 0.27
+    },
+    "Linkability": {
+      "rows": 123401,
+      "cwes": 197,
+      "top_cwe": "CWE-79",
+      "top_share": 0.289
+    },
+    "Identifiability": {
+      "rows": 26696,
+      "cwes": 83,
+      "top_cwe": "CWE-200",
+      "top_share": 0.322
+    },
+    "Non-compliance": {
+      "rows": 21968,
+      "cwes": 47,
+      "top_cwe": "CWE-264",
+      "top_share": 0.243
+    },
+    "Detectability": {
+      "rows": 16331,
+      "cwes": 59,
+      "top_cwe": "CWE-476",
+      "top_share": 0.222
+    },
+    "Non-repudiation": {
+      "rows": 1397,
+      "cwes": 22,
+      "top_cwe": "CWE-532",
+      "top_share": 0.565
+    },
+    "Unawareness": {
+      "rows": 702,
+      "cwes": 18,
+      "top_cwe": "CWE-250",
+      "top_share": 0.264
+    }
+  },
+  "rows_changed_by_overrides": 46490,
+  "override_sensitivity": 0.2667
+}
